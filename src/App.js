@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
+import Headings from './Heading';
+import List from './List';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <div>
+    <Headings data="Mobile Operating System"/>,
+    <ul>
+    <List name="Android" />
+    <List name="Blackberry" />
+    <List name="iphone" />
+    <List name="Windows Phone" />
+    </ul>
+    </div>,
+
+    <div>
+    <Headings data="Mobile Manufacturers"/>,
+    <ul>
+    <List name="Samsung" />
+    <List name="HTC" />
+    <List name="Micromax" />
+    <List name="Apple" />
+    </ul>
+  </div>
+    
+
+    </>
+ 
   );
 }
 
